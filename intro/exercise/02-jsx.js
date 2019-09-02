@@ -1,6 +1,9 @@
 const rootEl = document.getElementById('root');
-const content = 'Hello, World!';
-const myClassName = 'container';
-const element = <h1 className={myClassName}>{content}</h1>;
+// const content = 'Hello, World!';
+const props = {
+  className: 'container',
+  children: 'Hello, World!'
+};
+const element = <h1 {...props} />
 
 ReactDOM.render(element, rootEl);
