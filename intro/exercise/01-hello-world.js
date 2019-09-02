@@ -7,11 +7,18 @@
 // rootEl.appendChild(element);
 
 // REACT
+// const element = React.createElement(
+//   'h1',
+//   { className: 'container' },
+//   'Hello, World!'
+// );
 const rootEl = document.getElementById('root');
 const element = React.createElement(
   'h1',
-  { className: 'container' },
-  'Hello, World!'
+  {
+    className: 'container',
+    children: 'Hello, World'
+  }
 );
 
 ReactDOM.render(element, rootEl);
